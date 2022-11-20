@@ -34,9 +34,15 @@
             @media(max-width:800px){
                 #grid{
                     display:block;
+                    text-align: center;
                 }
                 #grid ol{
                     border-right : none;
+                    display: inline-block;
+                    text-align: left;
+                }
+                #article{
+                    text-align: left;
                 }
                 h1{
                     border-bottom : none;
