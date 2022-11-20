@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            /*
+            block level element
+            */
+            body{
+                margin : 0;
+            }
+            h1{
+                padding : 20px;
+                margin : 40px;
+                text-align : center;
+                border-bottom : 1px solid black;
+                margin : 0;
+                padding : 40px;
+                /*display : inline or block;*/
+            }
+
+            #grid ol{
+                border-right : 1px solid black;
+                width : 100px;
+                margin : 0;
+                padding : 20px;
+                padding-left : 33px;
+            }
+
+            #grid{
+                display:grid;
+                grid-template-columns: 150px 1fr;
+            }
+            
+            #article{
+                padding-left : 25px
+            }
+            @media(max-width:800px){
+                #grid{
+                    display:block;
+                }
+                #grid ol{
+                    border-right : none;
+                }
+                h1{
+                    border-bottom : none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS</h1>
+        <div id="grid">
+            <ol>
+                <li><a href="https://namu.wiki/w/HTML" target="_blank">HTML</a></li>
+                <li><a href="https://namu.wiki/w/CSS" target="_blank">CSS</a></li>
+                <li><a href="https://namu.wiki/w/JavaScript" target="_blank">JavaScript</a></li>
+            </ol>
+            <div id="article">
+                <br>When the first <a href = "https://www.w3.org/TR/CSS/#intro">CSS</a> specification was published, all of CSS was contained in one document that defined CSS Level 1. 
+                CSS Level 2 was defined also by a single, multi-chapter document. However for CSS beyond Level 2, 
+                the CSS Working Group chose to adopt a modular approach, where each module defines a part of CSS, rather than to define a single monolithic specification. 
+                This breaks the specification into more manageable chunks and allows more immediate, incremental improvement to CSS.
+            </div>
+        </div>
+    </body>
+
+
+</html>
